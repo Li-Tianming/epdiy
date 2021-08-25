@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/vroland/dev/misc/epaper-breakout/hardware/epaper-breakout/epaper-breakout.sch</source>
-    <date>Fr 08 Jan 2021 16:12:09 CET</date>
-    <tool>Eeschema 5.1.9</tool>
+    <source>D:\Data\epdiy\hardware\epaper-breakout\epaper-breakout.sch</source>
+    <date>2021/8/21 17:45:49</date>
+    <tool>Eeschema (5.1.10)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>epdiy</title>
@@ -613,7 +613,7 @@
     </comp>
     <comp ref="RV1">
       <value>200k</value>
-      <footprint>epaper-breakout:EVM3ESX50B25</footprint>
+      <footprint>epaper-breakout:JLC_RES-ADJ-TH_3362P</footprint>
       <datasheet>https://lcsc.com/product-detail/Variable-Resistors_PANASONIC-EVM3ESX50B25_C11958.html</datasheet>
       <fields>
         <field name="LCSC">C11958</field>
@@ -624,7 +624,7 @@
     </comp>
     <comp ref="J2">
       <value>C10418</value>
-      <footprint>epaper-breakout:USB_Micro-B_A01SB141B1-067</footprint>
+      <footprint>epaper-breakout:JLC_MICRO-USB-SMD_A4A0507-E-01-R</footprint>
       <datasheet>https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-Jing-Extension-of-the-Electronic-Co-MICRO-USB-5S-B-Type-horns-High-temperature_C10418.html</datasheet>
       <fields>
         <field name="LCSC">C10418</field>
@@ -635,7 +635,7 @@
     </comp>
     <comp ref="U6">
       <value>ED060XC5</value>
-      <footprint>epaper-breakout:X05A20H34G</footprint>
+      <footprint>epaper-breakout:JLC_FFC-SMD_34P-P0.50_FH34SRJ-34S-0.5SH</footprint>
       <datasheet>http://www.universaldisplay.asia/wp-content/uploads/2012/10/ED060XC5.pdf, https://datasheet.lcsc.com/szlcsc/2005221833_XKB-Connectivity-X05A20H34G_C528053.pdf</datasheet>
       <libsource lib="epd_breakout" part="ED060XC5" description="ED060XC5 E-Paper screen"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1796,61 +1796,61 @@
         <pin num="6" name="~STDBY" type="openCol"/>
         <pin num="7" name="~CHRG" type="openCol"/>
         <pin num="8" name="CE" type="input"/>
-        <pin num="9" name="PP" type="passive"/>
+        <pin num="9" name="PP" type="input"/>
       </pins>
     </libpart>
   </libparts>
   <libraries>
     <library logical="74HC4094">
-      <uri>/home/vroland/dev/misc/epaper-breakout/hardware/epaper-breakout/74HC4094.lib</uri>
+      <uri>D:\Data\epdiy\hardware\epaper-breakout/74HC4094.lib</uri>
     </library>
     <library logical="Amplifier_Operational">
-      <uri>/usr/share/kicad/library/Amplifier_Operational.lib</uri>
+      <uri>D:\Program Files\KiCad\share\kicad\library/Amplifier_Operational.lib</uri>
     </library>
     <library logical="Connector">
-      <uri>/usr/share/kicad/library/Connector.lib</uri>
+      <uri>D:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
     </library>
     <library logical="Connector_Generic">
-      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
+      <uri>D:\Program Files\KiCad\share\kicad\library/Connector_Generic.lib</uri>
     </library>
     <library logical="Device">
-      <uri>/usr/share/kicad/library/Device.lib</uri>
+      <uri>D:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
     </library>
     <library logical="Diode">
-      <uri>/usr/share/kicad/library/Diode.lib</uri>
+      <uri>D:\Program Files\KiCad\share\kicad\library/Diode.lib</uri>
     </library>
     <library logical="Interface_USB">
-      <uri>/usr/share/kicad/library/Interface_USB.lib</uri>
+      <uri>D:\Program Files\KiCad\share\kicad\library/Interface_USB.lib</uri>
     </library>
     <library logical="Mechanical">
-      <uri>/usr/share/kicad/library/Mechanical.lib</uri>
+      <uri>D:\Program Files\KiCad\share\kicad\library/Mechanical.lib</uri>
     </library>
     <library logical="Regulator_Linear">
-      <uri>/usr/share/kicad/library/Regulator_Linear.lib</uri>
+      <uri>D:\Program Files\KiCad\share\kicad\library/Regulator_Linear.lib</uri>
     </library>
     <library logical="Regulator_Switching">
-      <uri>/usr/share/kicad/library/Regulator_Switching.lib</uri>
+      <uri>D:\Program Files\KiCad\share\kicad\library/Regulator_Switching.lib</uri>
     </library>
     <library logical="Sensor_Temperature">
-      <uri>/usr/share/kicad/library/Sensor_Temperature.lib</uri>
+      <uri>D:\Program Files\KiCad\share\kicad\library/Sensor_Temperature.lib</uri>
     </library>
     <library logical="Transistor_BJT">
-      <uri>/usr/share/kicad/library/Transistor_BJT.lib</uri>
+      <uri>D:\Program Files\KiCad\share\kicad\library/Transistor_BJT.lib</uri>
     </library>
     <library logical="Transistor_FET">
-      <uri>/usr/share/kicad/library/Transistor_FET.lib</uri>
+      <uri>D:\Program Files\KiCad\share\kicad\library/Transistor_FET.lib</uri>
     </library>
     <library logical="ed060sc4">
-      <uri>/home/vroland/dev/misc/epaper-breakout/hardware/epaper-breakout/ed060sc4.lib</uri>
+      <uri>D:\Data\epdiy\hardware\epaper-breakout/ed060sc4.lib</uri>
     </library>
     <library logical="epd_breakout">
-      <uri>/home/vroland/dev/misc/epaper-breakout/hardware/epaper-breakout/epd_breakout.lib</uri>
+      <uri>D:\Data\epdiy\hardware\epaper-breakout/epd_breakout.lib</uri>
     </library>
     <library logical="esp32-wrover">
-      <uri>/home/vroland/dev/misc/epaper-breakout/hardware/epaper-breakout/esp32-wrover-kicad/esp32-wrover.lib</uri>
+      <uri>D:\Data\epdiy\hardware\epaper-breakout/esp32-wrover-kicad/esp32-wrover.lib</uri>
     </library>
     <library logical="tp4056">
-      <uri>/home/vroland/dev/misc/epaper-breakout/hardware/epaper-breakout/tp4056/lib/tp4056.lib</uri>
+      <uri>D:\Data\epdiy\hardware\epaper-breakout/tp4056/lib/tp4056.lib</uri>
     </library>
   </libraries>
   <nets>
@@ -1931,7 +1931,7 @@
       <node ref="J1" pin="30"/>
       <node ref="J1" pin="7"/>
       <node ref="J1" pin="11"/>
-      <node ref="Q5" pin="2"/>
+      <node ref="Q5" pin="3"/>
       <node ref="U6" pin="6"/>
     </net>
     <net code="11" name="Net-(U6-Pad5)">
@@ -2187,7 +2187,7 @@
       <node ref="U1" pin="2"/>
       <node ref="U8" pin="16"/>
       <node ref="J3" pin="6"/>
-      <node ref="Q5" pin="3"/>
+      <node ref="Q5" pin="2"/>
       <node ref="R15" pin="1"/>
       <node ref="U8" pin="15"/>
       <node ref="C18" pin="2"/>
@@ -2233,10 +2233,10 @@
     </net>
     <net code="53" name="VIN">
       <node ref="Q1" pin="2"/>
-      <node ref="Q2" pin="3"/>
+      <node ref="U1" pin="3"/>
       <node ref="D7" pin="1"/>
       <node ref="R20" pin="2"/>
-      <node ref="U1" pin="3"/>
+      <node ref="Q2" pin="2"/>
       <node ref="R21" pin="1"/>
       <node ref="C2" pin="2"/>
     </net>
@@ -2356,8 +2356,8 @@
       <node ref="J3" pin="2"/>
     </net>
     <net code="80" name="/SENSOR_VP">
-      <node ref="U5" pin="4"/>
       <node ref="J3" pin="1"/>
+      <node ref="U5" pin="4"/>
     </net>
     <net code="81" name="Net-(J1-Pad27)">
       <node ref="J1" pin="27"/>
@@ -2442,24 +2442,24 @@
     </net>
     <net code="105" name="SW_VIN">
       <node ref="U3" pin="8"/>
-      <node ref="Q2" pin="2"/>
-      <node ref="L2" pin="2"/>
-      <node ref="L1" pin="2"/>
-      <node ref="C1" pin="1"/>
-      <node ref="L3" pin="2"/>
-      <node ref="C6" pin="1"/>
-      <node ref="L4" pin="2"/>
       <node ref="U2" pin="8"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="L3" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="L4" pin="2"/>
+      <node ref="C6" pin="1"/>
+      <node ref="L1" pin="2"/>
+      <node ref="L2" pin="2"/>
     </net>
     <net code="106" name="Net-(C4-Pad2)">
+      <node ref="L1" pin="1"/>
       <node ref="U2" pin="10"/>
       <node ref="C4" pin="2"/>
-      <node ref="L1" pin="1"/>
     </net>
     <net code="107" name="Net-(C8-Pad1)">
-      <node ref="R7" pin="1"/>
-      <node ref="C8" pin="1"/>
       <node ref="U2" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="R7" pin="1"/>
       <node ref="R6" pin="2"/>
     </net>
     <net code="108" name="Net-(D1-Pad2)">
@@ -2468,38 +2468,38 @@
       <node ref="L2" pin="1"/>
     </net>
     <net code="109" name="Net-(C7-Pad2)">
+      <node ref="C7" pin="2"/>
       <node ref="U3" pin="10"/>
       <node ref="L3" pin="1"/>
-      <node ref="C7" pin="2"/>
     </net>
     <net code="110" name="/CTRL+15V">
-      <node ref="U3" pin="4"/>
       <node ref="U8" pin="5"/>
+      <node ref="U3" pin="4"/>
     </net>
     <net code="111" name="/CTRL-15V">
-      <node ref="U8" pin="6"/>
       <node ref="U3" pin="2"/>
+      <node ref="U8" pin="6"/>
     </net>
     <net code="112" name="Net-(C7-Pad1)">
-      <node ref="D6" pin="1"/>
-      <node ref="D5" pin="2"/>
       <node ref="C7" pin="1"/>
+      <node ref="D5" pin="2"/>
+      <node ref="D6" pin="1"/>
     </net>
     <net code="113" name="Net-(C10-Pad1)">
       <node ref="C10" pin="1"/>
-      <node ref="R17" pin="1"/>
       <node ref="U3" pin="5"/>
       <node ref="R16" pin="2"/>
+      <node ref="R17" pin="1"/>
     </net>
     <net code="114" name="Net-(D4-Pad2)">
-      <node ref="L4" pin="1"/>
-      <node ref="D4" pin="2"/>
       <node ref="U3" pin="6"/>
+      <node ref="D4" pin="2"/>
+      <node ref="L4" pin="1"/>
     </net>
     <net code="115" name="Net-(C11-Pad1)">
-      <node ref="R18" pin="2"/>
-      <node ref="R19" pin="1"/>
       <node ref="U3" pin="1"/>
+      <node ref="R19" pin="1"/>
+      <node ref="R18" pin="2"/>
       <node ref="C11" pin="1"/>
     </net>
     <net code="116" name="Net-(J4-Pad26)">

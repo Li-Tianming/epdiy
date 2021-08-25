@@ -1989,7 +1989,7 @@ U 1 1 5DC48245
 P 4200 10250
 F 0 "RV1" H 4131 10296 50  0000 R CNN
 F 1 "200k" H 4131 10205 50  0000 R CNN
-F 2 "epaper-breakout:EVM3ESX50B25" H 4200 10250 50  0001 C CNN
+F 2 "epaper-breakout:JLC_RES-ADJ-TH_3362P" H 4200 10250 50  0001 C CNN
 F 3 "https://lcsc.com/product-detail/Variable-Resistors_PANASONIC-EVM3ESX50B25_C11958.html" H 4200 10250 50  0001 C CNN
 F 4 "C11958" H 4200 10250 50  0001 C CNN "LCSC"
 	1    4200 10250
@@ -2053,7 +2053,7 @@ U 1 1 5D83555C
 P 800 10050
 F 0 "J2" H 857 10517 50  0000 C CNN
 F 1 "C10418" H 857 10426 50  0000 C CNN
-F 2 "epaper-breakout:USB_Micro-B_A01SB141B1-067" H 950 10000 50  0001 C CNN
+F 2 "epaper-breakout:JLC_MICRO-USB-SMD_A4A0507-E-01-R" H 950 10000 50  0001 C CNN
 F 3 "https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-Jing-Extension-of-the-Electronic-Co-MICRO-USB-5S-B-Type-horns-High-temperature_C10418.html" H 950 10000 50  0001 C CNN
 F 4 "C10418" H 800 10050 50  0001 C CNN "LCSC"
 	1    800  10050
@@ -2065,7 +2065,7 @@ U 1 1 61320AF7
 P 12900 7750
 F 0 "U6" H 13478 7796 50  0000 L CNN
 F 1 "ED060XC5" H 13478 7705 50  0000 L CNN
-F 2 "epaper-breakout:X05A20H34G" H 12950 9600 50  0001 C CNN
+F 2 "epaper-breakout:JLC_FFC-SMD_34P-P0.50_FH34SRJ-34S-0.5SH" H 12950 9600 50  0001 C CNN
 F 3 "http://www.universaldisplay.asia/wp-content/uploads/2012/10/ED060XC5.pdf, https://datasheet.lcsc.com/szlcsc/2005221833_XKB-Connectivity-X05A20H34G_C528053.pdf" H 12950 9600 50  0001 C CNN
 	1    12900 7750
 	1    0    0    -1  

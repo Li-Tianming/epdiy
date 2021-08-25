@@ -1,0 +1,38 @@
+Comment,Designator,Footprint,LCSC Part #
+4.7uF Polarized capacitor,"C1,C6",0603,C19666
+0.1uF Unpolarized capacitor,"C4,C7,C15,C16,C22,C23",0603,C14663
+100k Resistor,R2,0805,C17407
+100pF Unpolarized capacitor,"C8,C11",0603,C14858
+100uF Unpolarized capacitor,C17,CP_EIA-3528-15_AVX-H,C16133
+10k Resistor,"R1,R10,R11,R13,R15,R19,R20",0805,C17414
+10uF Unpolarized capacitor,"C2,C3,C21",0603,C19702
+110k Resistor,R18,0805,C17422
+120k Resistor,R5,0805,C17436
+150k Resistor,R22,0805,C17470
+1k Resistor,"R3,R8,R12",0805,C17513
+"1N5817 20V 1A Schottky Barrier Rectifier Diode, DO-41","D7,D10",D_SOD-123,C8598
+1uF Unpolarized capacitor,"C9,C12,C13,C14,C18,C19,C20",0603,C15849
+22uH Inductor,"L1,L2,L3,L4",L_6.3x6.3_H3,C206321
+27k Resistor,R17,0805,C17593
+2M Resistor,R4,0805,C26112
+300k Resistor,R16,0805,C17616
+390k Resistor,R14,0805,C17656
+39k Resistor,R7,0805,C25826
+4.7pF Unpolarized capacitor,"C5,C10",0603,C1669
+560k Resistor,R6,0805,C15785
+6.8k Resistor,R9,0805,C17772
+680k Resistor,R21,0805,C17797
+74HC4094,U8,SOIC-16_3.9x9.9mm_P1.27mm,C5651
+"AO3401A -4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23","Q1,Q2,Q5",SOT-23,C15127
+C10418 USB Micro Type B connector,J2,MICRO-USB-SMD_A4A0507-E-01-R, C404969
+"CH340C USB serial converter, UART, SOIC-16",U12,SOIC-16_3.9x9.9mm_P1.27mm,C84681
+LED GREEN Light emitting diode,D8,0805,C2297
+LED RED Light emitting diode,D9,0805,C84256
+"LM358 Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8",U7,SOP-8_3.76x4.96mm_P1.27mm,C7950
+"LT1945 Dual Micropower DC/DC Converter with Positive and Negative Outputs, MSOP-10","U2,U3",MSOP-10_3x3mm_P0.5mm
+"MBR0540 40V 0.5A Schottky Power Rectifier Diode, SOD-123","D1,D2,D3,D4,D5,D6",D_SOD-123,C21353
+"MCP1700-3302E_SOT23 250mA Low Quiscent Current LDO, 3.3V output, SOT-23",U1,SOT-23,C39051
+"MCP9700AT-ETT Low power, analog thermistor temperature sensor, ¡À2C accuracy, -40C to +125C, in SOT-23-3",U9,SOT-23,C127949
+"MMBT3904 0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23","Q3,Q4,Q6",SOT-23,C20526
+X05A20H34G,U6,FH34SRJ-34S-0.5SH, C424660
+"XC6206PxxxMR Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23",U4,SOT-23,C5446
