@@ -11,6 +11,12 @@ D ED060XC5 E-Paper screen
 F http://www.universaldisplay.asia/wp-content/uploads/2012/10/ED060XC5.pdf, https://datasheet.lcsc.com/szlcsc/2005221833_XKB-Connectivity-X05A20H34G_C528053.pdf
 $ENDCMP
 #
+$CMP SW_DIP_x01
+D 1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol
+K dip switch
+F ~
+$ENDCMP
+#
 $CMP USB_B_Mini
 D USB Mini Type B connector
 K connector USB mini
