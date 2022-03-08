@@ -1,38 +1,57 @@
-Comment,Designator,Footprint,LCSC Part #
-4.7uF Polarized capacitor,"C1,C6",0603,C19666
-0.1uF Unpolarized capacitor,"C4,C7,C15,C16,C22,C23",0603,C14663
-100k Resistor,R2,0805,C17407
-100pF Unpolarized capacitor,"C8,C11",0603,C14858
-100uF Unpolarized capacitor,C17,CP_EIA-3528-15_AVX-H,C16133
-10k Resistor,"R1,R10,R11,R13,R15,R19,R20",0805,C17414
-10uF Unpolarized capacitor,"C2,C3,C21",0603,C19702
-110k Resistor,R18,0805,C17422
-120k Resistor,R5,0805,C17436
-150k Resistor,R22,0805,C17470
-1k Resistor,"R3,R8,R12",0805,C17513
-"1N5817 20V 1A Schottky Barrier Rectifier Diode, DO-41","D7,D10",D_SOD-123,C8598
-1uF Unpolarized capacitor,"C9,C12,C13,C14,C18,C19,C20",0603,C15849
-22uH Inductor,"L1,L2,L3,L4",L_6.3x6.3_H3,C206321
-27k Resistor,R17,0805,C17593
-2M Resistor,R4,0805,C26112
-300k Resistor,R16,0805,C17616
-390k Resistor,R14,0805,C17656
-39k Resistor,R7,0805,C25826
-4.7pF Unpolarized capacitor,"C5,C10",0603,C1669
-560k Resistor,R6,0805,C15785
-6.8k Resistor,R9,0805,C17772
-680k Resistor,R21,0805,C17797
-74HC4094,U8,SOIC-16_3.9x9.9mm_P1.27mm,C5651
-"AO3401A -4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23","Q1,Q2,Q5",SOT-23,C15127
-C10418 USB Micro Type B connector,J2,MICRO-USB-SMD_A4A0507-E-01-R, C404969
-"CH340C USB serial converter, UART, SOIC-16",U12,SOIC-16_3.9x9.9mm_P1.27mm,C84681
-LED GREEN Light emitting diode,D8,0805,C2297
-LED RED Light emitting diode,D9,0805,C84256
-"LM358 Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8",U7,SOP-8_3.76x4.96mm_P1.27mm,C7950
-"LT1945 Dual Micropower DC/DC Converter with Positive and Negative Outputs, MSOP-10","U2,U3",MSOP-10_3x3mm_P0.5mm
-"MBR0540 40V 0.5A Schottky Power Rectifier Diode, SOD-123","D1,D2,D3,D4,D5,D6",D_SOD-123,C21353
-"MCP1700-3302E_SOT23 250mA Low Quiscent Current LDO, 3.3V output, SOT-23",U1,SOT-23,C39051
-"MCP9700AT-ETT Low power, analog thermistor temperature sensor, ��2C accuracy, -40C to +125C, in SOT-23-3",U9,SOT-23,C127949
-"MMBT3904 0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23","Q3,Q4,Q6",SOT-23,C20526
-X05A20H34G,U6,FH34SRJ-34S-0.5SH, C424660
-"XC6206PxxxMR Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23",U4,SOT-23,C5446
+"ID";"位号";"包";"数量";"名称";"供应商和位号";
+1;"BT1";"JLC_BAT-SMD_MY-1220-03";1;"Battery_Cell";;;
+2;"Y1";"JLC_CRYSTAL-SMD_L7.0-W3.2-LS7.5";1;"Crystal";;;
+3;"U11";"SOIC-8_3.9x4.9mm_P1.27mm";1;"PCF8563T";;;
+4;"TP2,TP1";"TestPoint_Pad_D1.0mm";2;"TestPoint_Probe";;;
+5;"R26,R13";"R_0805_2012Metric";2;"100k";;;
+6;"R25,R24,R15,R14";"R_0805_2012Metric";4;"1k";;;
+7;"R23";"R_0603_1608Metric";1;"33";;;
+8;"Q5";"SOT-23";1;"2N7002";;;
+9;"L4,L3,L2,L1";"JLC_IND-SMD_L4.0-W4.0_SMNR4020";4;"22uH";;;
+10;"D13,D12,D11,D8,D7";"D_SOD-123";5;"1N5817";;;
+11;"C26,C25,C16,C24,C20";"C_0603_1608Metric";5;"10uF";;;
+12;"C22,C21";"C_0603_1608Metric";2;"22pF";;;
+13;"BZ1";"JLC_BUZ-SMD_4P-L8.5-W8.5_FUET-8530-05";1;"Buzzer";;;
+14;"H4,H3";"MountingHole_4mm";2;"MountingHole";;;
+15;"U7";"JLC_CONN-SMD_A1254WR-S-2P";1;"CONN-Battery";;;
+16;"U4";"SOIC-16_3.9x9.9mm_P1.27mm";1;"CH340C";;;
+17;"U8";"TP4056_SOP-8-PP";1;"TP4056";;;
+18;"U5";"SOIC-16_3.9x9.9mm_P1.27mm";1;"74HC4094-normal";;;
+19;"U6";"SOP-8_3.76x4.96mm_P1.27mm";1;"LM358";;;
+20;"U13";"X05A20H34G";1;"ED060XC5";;;
+21;"U10";"ESP32-WROVER";1;"ESP32-WROVER";;;
+22;"U3";"SOT-23";1;"XC6206PxxxMR";;;
+23;"U2,U1";"MSOP-10_3x3mm_P0.5mm";2;"LT1945";;;
+24;"U9";"SOT-23";1;"MCP1700-3302E_SOT23";;;
+25;"SW1";"JLC_SW-SMD_MK-12C02-G025";1;"SW_DIP_x01";;;
+26;"RV1";"JLC_RES-ADJ-SMD_VG039NCH";1;"200k";;;
+27;"R2,R1";"R_0805_2012Metric";2;"5.1K";;;
+28;"R22";"R_0805_2012Metric";1;"150k";;;
+29;"R21";"R_0805_2012Metric";1;"680k";;;
+30;"R27,R10,R20,R19,R12,R18,R17";"R_0805_2012Metric";7;"10k";;;
+31;"R9";"R_0805_2012Metric";1;"110k";;;
+32;"R6";"R_0805_2012Metric";1;"27k";;;
+33;"R5";"R_0805_2012Metric";1;"300k";;;
+34;"R11";"R_0805_2012Metric";1;"390k";;;
+35;"R16";"R_0805_2012Metric";1;"6.8k";;;
+36;"R8";"R_0805_2012Metric";1;"39k";;;
+37;"R7";"R_0805_2012Metric";1;"560k";;;
+38;"R4";"R_0805_2012Metric";1;"120k";;;
+39;"R3";"R_0805_2012Metric";1;"2M";;;
+40;"Q4,Q3,Q2";"SOT-23";3;"MMBT3904";;;
+41;"Q7,Q6,Q1";"SOT-23";3;"AO3401A";;;
+42;"JP_BAT1,JP_TEMP1";"SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm";2;"Jumper";;;
+43;"J1";"JLC_USB-C-SMD_KH-TYPE-C-16P";1;"USB_C_16P";;;
+44;"D10";"LED_0805_2012Metric";1;"LED RED";;;
+45;"D9";"LED_0805_2012Metric";1;"LED GREEN";;;
+46;"D6,D4,D2,D5,D3,D1";"D_SOD-123";6;"MBR0540";;;
+47;"C27,C23,C9,C17,C5,C4";"C_0603_1608Metric";6;"0.1uF";;;
+48;"C15,C13,C19,C8,C3,C14,C12";"C_0603_1608Metric";7;"1uF";;;
+49;"C18";"CP_EIA-3528-15_AVX-H";1;"100uF";;;
+50;"C11,C10";"C_0603_1608Metric";2;"100pF";;;
+51;"C7,C6";"C_0603_1608Metric";2;"4.7pF";;;
+52;"C2,C1";"C_0603_1608Metric";2;"4.7uF";;;
+53;"H1,H2";"MountingHole_2.2mm_M2";2;"MountingHole";;;
+54;"U14";"JLC_FFC-SMD_6P-P0.50_FH34SRJ-6S-0.5SH";1;"FPC-TOUCH";;;
+55;"J2";"PinHeader_2x06_P2.54mm_Vertical";1;"Conn_02x06_Counter_Clockwise";;;
+56;"U12";"SOT-23";1;"MCP9700AT-ETT";;;

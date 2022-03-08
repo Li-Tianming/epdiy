@@ -89,6 +89,7 @@ F 0 "U1" H 2050 2367 50  0000 C CNN
 F 1 "LT1945" H 2050 2276 50  0000 C CNN
 F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 2100 1550 50  0001 L CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1945fa.pdf" H 2150 1800 50  0001 C CNN
+F 4 "C665600" H 2050 1800 50  0001 C CNN "LCSC"
 	1    2050 1800
 	1    0    0    -1  
 $EndComp
@@ -926,6 +927,7 @@ F 0 "U2" H 2050 6417 50  0000 C CNN
 F 1 "LT1945" H 2050 6326 50  0000 C CNN
 F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 2100 5600 50  0001 L CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1945fa.pdf" H 2150 5850 50  0001 C CNN
+F 4 "C665600" H 2050 5850 50  0001 C CNN "LCSC"
 	1    2050 5850
 	1    0    0    -1  
 $EndComp
@@ -1709,6 +1711,7 @@ F 0 "U13" H 15528 7946 50  0000 L CNN
 F 1 "ED060XC5" H 15528 7855 50  0000 L CNN
 F 2 "epaper-breakout:X05A20H34G" H 15000 9750 50  0001 C CNN
 F 3 "http://www.universaldisplay.asia/wp-content/uploads/2012/10/ED060XC5.pdf, https://datasheet.lcsc.com/szlcsc/2005221833_XKB-Connectivity-X05A20H34G_C528053.pdf" H 15000 9750 50  0001 C CNN
+F 4 "C528053" H 14950 7900 50  0001 C CNN "LCSC"
 	1    14950 7900
 	1    0    0    -1  
 $EndComp
@@ -2705,7 +2708,7 @@ F 0 "SW1" V 7800 10900 50  0000 C CNN
 F 1 "SW_DIP_x01" V 8000 10700 50  0000 C CNN
 F 2 "epaper-breakout:JLC_SW-SMD_MK-12C02-G025" H 7800 10700 50  0001 C CNN
 F 3 "https://item.szlcsc.com/826787.html" H 7800 10700 50  0001 C CNN
-F 4 " C778186" V 7800 10700 50  0001 C CNN "Field4"
+F 4 " C778186" V 7800 10700 50  0001 C CNN "LCSC"
 	1    7800 10700
 	0    -1   1    0   
 $EndComp
@@ -2729,6 +2732,7 @@ F 0 "U7" H 6828 6891 50  0000 L CNN
 F 1 "CONN-Battery" H 6828 6800 50  0000 L CNN
 F 2 "epaper-breakout:JLC_CONN-SMD_A1254WR-S-2P" H 6828 6709 50  0000 L CNN
 F 3 "https://item.szlcsc.com/261346.html" H 6400 6550 50  0001 C CNN
+F 4 " C272975" H 6600 6800 50  0001 C CNN "LCSC"
 	1    6600 6800
 	1    0    0    -1  
 $EndComp
@@ -2893,7 +2897,7 @@ F 0 "U11" H 9450 9381 50  0000 C CNN
 F 1 "PCF8563T" H 9450 9290 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9450 8800 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/PCF8563.pdf" H 9450 8800 50  0001 C CNN
-F 4 "~" H 9450 8800 50  0001 C CNN "LCSC"
+F 4 "C7440" H 9450 8800 50  0001 C CNN "LCSC"
 	1    9450 8800
 	1    0    0    -1  
 $EndComp
@@ -3228,8 +3232,8 @@ P 11550 8100
 F 0 "R23" H 11620 8146 50  0000 L CNN
 F 1 "33" H 11620 8055 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 11480 8100 50  0001 C CNN
-F 3 "https://item.szlcsc.com/3014656.html" H 11550 8100 50  0001 C CNN
-F 4 " C2838960" H 11550 8100 50  0001 C CNN "LCSC"
+F 3 "https://item.szlcsc.com/73924.html" H 11550 8100 50  0001 C CNN
+F 4 "C72812" H 11550 8100 50  0001 C CNN "LCSC"
 	1    11550 8100
 	0    1    1    0   
 $EndComp
