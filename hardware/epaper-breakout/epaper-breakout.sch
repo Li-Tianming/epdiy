@@ -511,12 +511,6 @@ Wire Wire Line
 	5950 2600 5450 2600
 Wire Wire Line
 	5450 3100 5950 3100
-Text Label 7500 2600 0    50   ~ 0
-MISO
-Text Label 7500 2500 0    50   ~ 0
-SCLK
-Text Label 7500 2800 0    50   ~ 0
-MOSI
 $Comp
 L esp32-wrover:ESP32-WROVER U10
 U 1 1 5E61FA0C
@@ -533,8 +527,6 @@ Text Label 10100 2200 2    50   ~ 0
 EP_D3
 Text Label 10100 2800 2    50   ~ 0
 EP_LE
-Wire Wire Line
-	8000 2800 7500 2800
 $Comp
 L power:GND #PWR035
 U 1 1 5EECDEA5
@@ -750,16 +742,6 @@ Text Label 5900 1100 3    50   ~ 0
 EN
 Wire Wire Line
 	5900 1400 6000 1400
-Wire Wire Line
-	7500 2600 8000 2600
-Wire Wire Line
-	8000 2500 7500 2500
-Text Label 13900 1600 2    50   ~ 0
-MISO
-Text Label 13900 1700 2    50   ~ 0
-SCLK
-Text Label 13900 1800 2    50   ~ 0
-MOSI
 Text Label 13900 1900 2    50   ~ 0
 A1
 Wire Wire Line
@@ -774,12 +756,6 @@ Wire Wire Line
 	12600 1400 13100 1400
 Wire Wire Line
 	12600 1500 13100 1500
-Wire Wire Line
-	13900 1600 13600 1600
-Wire Wire Line
-	13900 1700 13600 1700
-Wire Wire Line
-	13900 1800 13600 1800
 Wire Wire Line
 	13900 1900 13600 1900
 Text Label 12800 1900 0    50   ~ 0
@@ -2256,7 +2232,7 @@ F 0 "R13" V 6700 5850 50  0000 L CNN
 F 1 "100k" V 6500 5850 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 6530 5900 50  0001 C CNN
 F 3 "~" H 6600 5900 50  0001 C CNN
-F 4 "C17407" V 6600 5900 50  0001 C CNN "LCSC"
+F 4 " C149504" V 6600 5900 50  0001 C CNN "LCSC"
 	1    6600 5900
 	0    1    1    0   
 $EndComp
@@ -2838,14 +2814,10 @@ F 3 "~" H 15300 2100 50  0001 C CNN
 	1    15300 2100
 	1    0    0    -1  
 $EndComp
-Text Label 10100 3100 2    50   ~ 0
+Text Label 7800 2500 2    50   ~ 0
 TCH_SDA
-Text Label 10100 3000 2    50   ~ 0
+Text Label 7800 2600 2    50   ~ 0
 TCH_SCL
-Wire Wire Line
-	9750 3100 10100 3100
-Wire Wire Line
-	10100 3000 9750 3000
 Text Label 14650 5450 2    50   ~ 0
 TCH_SCL
 Text Label 14600 5550 2    50   ~ 0
@@ -2873,14 +2845,10 @@ Text Label 14600 5650 2    50   ~ 0
 TCH_INT
 Text Label 14600 5750 2    50   ~ 0
 TCH_RST
-Text Label 7900 2900 2    50   ~ 0
+Text Label 7800 2800 2    50   ~ 0
 TCH_INT
-Text Label 7900 3000 2    50   ~ 0
+Text Label 9850 2400 0    50   ~ 0
 TCH_RST
-Wire Wire Line
-	7900 2900 8000 2900
-Wire Wire Line
-	7900 3000 8000 3000
 Wire Wire Line
 	14600 5550 14900 5550
 Wire Wire Line
@@ -3269,4 +3237,12 @@ Wire Wire Line
 	11250 8100 11400 8100
 Wire Wire Line
 	11250 8550 11250 8600
+Wire Wire Line
+	8000 2500 7800 2500
+Wire Wire Line
+	8000 2600 7800 2600
+Wire Wire Line
+	8000 2800 7800 2800
+Wire Wire Line
+	9750 2400 9850 2400
 $EndSCHEMATC
