@@ -11,6 +11,12 @@ D ED060XC5 E-Paper screen
 F http://www.universaldisplay.asia/wp-content/uploads/2012/10/ED060XC5.pdf, https://datasheet.lcsc.com/szlcsc/2005221833_XKB-Connectivity-X05A20H34G_C528053.pdf
 $ENDCMP
 #
+$CMP GHT30-DIS
+D I²C humidity and temperature sensor, ±2%RH, ±0.2°C, DFN-8
+K digital temperature humidity i2c
+F https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Datasheets/Sensirion_Humidity_Sensors_SHT3x_Datasheet_digital.pdf
+$ENDCMP
+#
 $CMP SW_DIP_x01
 D 1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol
 K dip switch

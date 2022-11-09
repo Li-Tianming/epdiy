@@ -459,14 +459,10 @@ Text Label 10100 2900 2    50   ~ 0
 EP_CKH
 Wire Wire Line
 	8000 1800 7500 1800
-Text Label 7500 1800 0    50   ~ 0
-A0
-Text Label 7500 1600 0    50   ~ 0
-SENSOR_VP
 Text Label 7500 1700 0    50   ~ 0
-SENSOR_VN
-Wire Wire Line
-	7500 1600 8000 1600
+SENSOR_BAT
+Text Label 7500 1800 0    50   ~ 0
+SENSOR_VBUS
 Wire Wire Line
 	7500 1700 8000 1700
 Text Label 7500 1500 0    50   ~ 0
@@ -742,55 +738,19 @@ Text Label 5900 1100 3    50   ~ 0
 EN
 Wire Wire Line
 	5900 1400 6000 1400
-Text Label 13900 1900 2    50   ~ 0
-A1
-Wire Wire Line
-	13100 1600 12600 1600
-Text Label 12600 1600 0    50   ~ 0
-A0
-Text Label 12600 1400 0    50   ~ 0
-SENSOR_VP
-Text Label 12600 1500 0    50   ~ 0
-SENSOR_VN
-Wire Wire Line
-	12600 1400 13100 1400
-Wire Wire Line
-	12600 1500 13100 1500
-Wire Wire Line
-	13900 1900 13600 1900
-Text Label 12800 1900 0    50   ~ 0
+Text Label 13700 1350 2    50   ~ 0
 +3.3V
 $Comp
 L power:GND #PWR039
 U 1 1 5EABA85C
-P 12600 1800
-F 0 "#PWR039" H 12600 1550 50  0001 C CNN
-F 1 "GND" H 12605 1627 50  0000 C CNN
-F 2 "" H 12600 1800 50  0001 C CNN
-F 3 "" H 12600 1800 50  0001 C CNN
-	1    12600 1800
+P 13600 1800
+F 0 "#PWR039" H 13600 1550 50  0001 C CNN
+F 1 "GND" H 13605 1627 50  0000 C CNN
+F 2 "" H 13600 1800 50  0001 C CNN
+F 3 "" H 13600 1800 50  0001 C CNN
+	1    13600 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13100 1900 12800 1900
-$Comp
-L Sensor_Temperature:MCP9700AT-ETT U12
-U 1 1 5EB1CA91
-P 12200 2950
-F 0 "U12" H 11870 2996 50  0000 R CNN
-F 1 "MCP9700AT-ETT" H 11870 2905 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 12200 2550 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21942e.pdf" H 12050 3200 50  0001 C CNN
-F 4 "C127949" H 12200 2950 50  0001 C CNN "LCSC"
-	1    12200 2950
-	1    0    0    -1  
-$EndComp
-Text Label 7500 1900 0    50   ~ 0
-V_TEMP
-Text Label 13550 2950 2    50   ~ 0
-V_TEMP
-Wire Wire Line
-	12200 2650 12200 2350
 Wire Wire Line
 	5950 2800 5450 2800
 Text Label 5450 2800 0    50   ~ 0
@@ -803,8 +763,6 @@ Wire Wire Line
 	5450 3000 5950 3000
 Text Label 5450 3000 0    50   ~ 0
 CTRL+15V
-Wire Wire Line
-	12600 1700 13100 1700
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5ED40F79
@@ -1253,33 +1211,12 @@ F 3 "~" H 4700 5000 50  0001 C CNN
 $EndComp
 Text Label 4700 5000 2    50   ~ 0
 -15V
-Text Label 7250 1900 0    50   ~ 0
-A1
-Wire Wire Line
-	7250 1900 8000 1900
 Text Label 5450 2600 0    50   ~ 0
 CTRL+22V
-Text Label 13900 1500 2    50   ~ 0
+Text Label 13700 1150 2    50   ~ 0
 USB_RXD
-Text Label 13900 1400 2    50   ~ 0
+Text Label 13700 950  2    50   ~ 0
 USB_TXD
-$Comp
-L Connector_Generic:Conn_02x06_Counter_Clockwise J2
-U 1 1 5FF5CE7F
-P 13300 1600
-F 0 "J2" H 13350 2017 50  0000 C CNN
-F 1 "Conn_02x06_Counter_Clockwise" H 13350 1926 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 13300 1600 50  0001 C CNN
-F 3 "~" H 13300 1600 50  0001 C CNN
-	1    13300 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13100 1800 12600 1800
-Wire Wire Line
-	13600 1500 13900 1500
-Wire Wire Line
-	13900 1400 13600 1400
 Connection ~ 5900 1400
 Wire Wire Line
 	5900 1700 6700 1700
@@ -1498,10 +1435,10 @@ Connection ~ 6850 8700
 Wire Wire Line
 	6850 8700 6850 8450
 $Comp
-L Connector:TestPoint_Probe TP1
+L Connector:TestPoint_Probe VCOM1
 U 1 1 5ED80CF9
 P 6850 8450
-F 0 "TP1" H 7003 8551 50  0000 L CNN
+F 0 "VCOM1" H 7003 8551 50  0000 L CNN
 F 1 "TestPoint_Probe" H 7003 8460 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7050 8450 50  0001 C CNN
 F 3 "~" H 7050 8450 50  0001 C CNN
@@ -1550,17 +1487,6 @@ F 1 "LM358" H 6700 10726 50  0000 C CNN
 F 2 "Package_SO:SOP-8_3.76x4.96mm_P1.27mm" H 6700 10450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 6700 10450 50  0001 C CNN
 	2    6700 10450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR038
-U 1 1 5EB6AA6D
-P 12200 3250
-F 0 "#PWR038" H 12200 3000 50  0001 C CNN
-F 1 "GND" H 12205 3077 50  0000 C CNN
-F 2 "" H 12200 3250 50  0001 C CNN
-F 3 "" H 12200 3250 50  0001 C CNN
-	1    12200 3250
 	1    0    0    -1  
 $EndComp
 Text Notes 5150 9450 0    50   ~ 0
@@ -1967,10 +1893,6 @@ F 4 " C15127" H 13550 4600 50  0001 C CNN "LCSC"
 $EndComp
 Text GLabel 14250 4850 2    50   Input ~ 0
 EPD_VDD
-Wire Wire Line
-	11600 4200 12050 4200
-Text Label 11600 4200 0    50   ~ 0
-SMPS_CTRL
 $Comp
 L Device:R R24
 U 1 1 606B1813
@@ -2298,7 +2220,7 @@ Wire Wire Line
 	7600 4250 7900 4250
 Text GLabel 6000 6700 0    50   Input ~ 0
 BAT+
-Text GLabel 12600 1700 0    50   Input ~ 0
+Text GLabel 13700 1550 0    50   Input ~ 0
 VBUS
 Wire Wire Line
 	9100 4650 9450 4650
@@ -2417,80 +2339,6 @@ Wire Wire Line
 Connection ~ 3350 10100
 Wire Wire Line
 	3350 10100 3250 10100
-$Comp
-L Device:Jumper JP_TEMP1
-U 1 1 66377595
-P 12900 2950
-F 0 "JP_TEMP1" H 12900 3214 50  0000 C CNN
-F 1 "Jumper" H 12900 3123 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 12900 2950 50  0001 C CNN
-F 3 "~" H 12900 2950 50  0001 C CNN
-	1    12900 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13200 2950 13550 2950
-Text Label 10100 4800 0    50   ~ 0
-A0
-$Comp
-L Device:Jumper JP_BAT1
-U 1 1 6640F176
-P 10550 4800
-F 0 "JP_BAT1" H 10550 5064 50  0000 C CNN
-F 1 "Jumper" H 10550 4973 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 10550 4800 50  0001 C CNN
-F 3 "~" H 10550 4800 50  0001 C CNN
-	1    10550 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10100 4800 10250 4800
-$Comp
-L Device:R R22
-U 1 1 6653BFFD
-P 11000 5050
-F 0 "R22" H 11070 5096 50  0000 L CNN
-F 1 "150k" H 11070 5005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 10930 5050 50  0001 C CNN
-F 3 "~" H 11000 5050 50  0001 C CNN
-F 4 " C17470" H 11000 5050 50  0001 C CNN "LCSC"
-	1    11000 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R21
-U 1 1 66586D13
-P 11000 4550
-F 0 "R21" H 11070 4596 50  0000 L CNN
-F 1 "680k" H 11070 4505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 10930 4550 50  0001 C CNN
-F 3 "~" H 11000 4550 50  0001 C CNN
-F 4 " C17797" H 11000 4550 50  0001 C CNN "LCSC"
-	1    11000 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR036
-U 1 1 666FDC76
-P 11000 5300
-F 0 "#PWR036" H 11000 5050 50  0001 C CNN
-F 1 "GND" H 11005 5127 50  0000 C CNN
-F 2 "" H 11000 5300 50  0001 C CNN
-F 3 "" H 11000 5300 50  0001 C CNN
-	1    11000 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11000 4300 11000 4400
-Wire Wire Line
-	10850 4800 11000 4800
-Wire Wire Line
-	11000 4800 11000 4700
-Wire Wire Line
-	11000 4800 11000 4900
-Connection ~ 11000 4800
-Wire Wire Line
-	11000 5200 11000 5300
 Text Label 9700 4950 2    50   ~ 0
 BAT-
 Wire Wire Line
@@ -2508,36 +2356,13 @@ F 3 "~" H 7600 4250 50  0001 C CNN
 	1    7600 4250
 	1    0    0    -1  
 $EndComp
-Text GLabel 11000 4300 1    50   Input ~ 0
-VIN
 NoConn ~ 8050 4850
-$Comp
-L Device:C C27
-U 1 1 5FF94231
-P 11450 5050
-F 0 "C27" H 11700 5100 50  0000 R CNN
-F 1 "0.1uF" H 11750 5000 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 11488 4900 50  0001 C CNN
-F 3 "~" H 11450 5050 50  0001 C CNN
-F 4 "C14663" V 11450 5050 50  0001 C CNN "LCSC"
-	1    11450 5050
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	11000 4800 11450 4800
-Wire Wire Line
-	11450 4800 11450 4900
-Wire Wire Line
-	11450 5200 11000 5200
-Connection ~ 11000 5200
 Text Label 6950 2800 2    50   ~ 0
 IO0
 Wire Wire Line
 	8000 2200 7500 2200
 Wire Wire Line
 	6750 2800 6950 2800
-Text GLabel 12200 2350 1    50   Input ~ 0
-EPD_VDD
 Wire Wire Line
 	1800 9250 1900 9250
 Wire Wire Line
@@ -2573,9 +2398,9 @@ U 1 1 5D83555C
 P 1200 9850
 F 0 "J1" H 1100 10350 50  0000 C CNN
 F 1 "USB_C_16P" H 1100 10200 50  0000 C CNN
-F 2 "epaper-breakout:JLC_USB-C-SMD_KH-TYPE-C-16P" H 1350 9800 50  0001 C CNN
-F 3 "https://item.szlcsc.com/747093.html" H 1350 9800 50  0001 C CNN
-F 4 " C709357" H 1200 9850 50  0001 C CNN "LCSC"
+F 2 "epaper-breakout:JLC_USB-C-SMD_TYPE-C-31-M-13C" H 1350 9800 50  0001 C CNN
+F 3 "https://item.szlcsc.com/3047129.html" H 1350 9800 50  0001 C CNN
+F 4 "C2835312" H 1200 9850 50  0001 C CNN "LCSC"
 	1    1200 9850
 	1    0    0    -1  
 $EndComp
@@ -2795,28 +2620,28 @@ Connection ~ 7600 10800
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 61D184EB
-P 15300 1850
-F 0 "H3" H 15400 1896 50  0000 L CNN
-F 1 "MountingHole" H 15400 1805 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4mm" H 15300 1850 50  0001 C CNN
-F 3 "~" H 15300 1850 50  0001 C CNN
-	1    15300 1850
+P 15300 1400
+F 0 "H3" H 15400 1446 50  0000 L CNN
+F 1 "MountingHole" H 15400 1355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 15300 1400 50  0001 C CNN
+F 3 "~" H 15300 1400 50  0001 C CNN
+	1    15300 1400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 61D188C1
-P 15300 2100
-F 0 "H4" H 15400 2146 50  0000 L CNN
-F 1 "MountingHole" H 15400 2055 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4mm" H 15300 2100 50  0001 C CNN
-F 3 "~" H 15300 2100 50  0001 C CNN
-	1    15300 2100
+P 15300 1650
+F 0 "H4" H 15400 1696 50  0000 L CNN
+F 1 "MountingHole" H 15400 1605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 15300 1650 50  0001 C CNN
+F 3 "~" H 15300 1650 50  0001 C CNN
+	1    15300 1650
 	1    0    0    -1  
 $EndComp
 Text Label 7800 2500 2    50   ~ 0
 TCH_SDA
-Text Label 7800 2600 2    50   ~ 0
+Text Label 7800 2800 2    50   ~ 0
 TCH_SCL
 Text Label 14650 5450 2    50   ~ 0
 TCH_SCL
@@ -2843,18 +2668,12 @@ Wire Wire Line
 	14750 5350 14900 5350
 Text Label 14600 5650 2    50   ~ 0
 TCH_INT
-Text Label 14600 5750 2    50   ~ 0
-TCH_RST
-Text Label 7800 2800 2    50   ~ 0
+Text Label 7800 1600 2    50   ~ 0
 TCH_INT
-Text Label 9850 2400 0    50   ~ 0
-TCH_RST
 Wire Wire Line
 	14600 5550 14900 5550
 Wire Wire Line
 	14600 5650 14900 5650
-Wire Wire Line
-	14600 5750 14900 5750
 Wire Wire Line
 	14750 5350 14750 5900
 $Comp
@@ -3046,10 +2865,10 @@ Wire Wire Line
 	8250 9400 8600 9400
 Connection ~ 8600 9400
 $Comp
-L Connector:TestPoint_Probe TP2
+L Connector:TestPoint_Probe RTCCLK1
 U 1 1 61DD2554
 P 10150 8900
-F 0 "TP2" H 10303 9001 50  0000 L CNN
+F 0 "RTCCLK1" H 10303 9001 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10303 8910 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10350 8900 50  0001 C CNN
 F 3 "~" H 10350 8900 50  0001 C CNN
@@ -3183,10 +3002,8 @@ Wire Wire Line
 Connection ~ 11850 8100
 Wire Wire Line
 	11850 8100 11700 8100
-Text Label 9850 2500 0    50   ~ 0
+Text Label 7800 2600 2    50   ~ 0
 BUZZER
-Wire Wire Line
-	9750 2500 9850 2500
 Text Label 11750 8600 0    50   ~ 0
 BUZZER
 Wire Wire Line
@@ -3244,5 +3061,362 @@ Wire Wire Line
 Wire Wire Line
 	8000 2800 7800 2800
 Wire Wire Line
-	9750 2400 9850 2400
+	11600 4200 12050 4200
+Text Label 11600 4200 0    50   ~ 0
+SMPS_CTRL
+Text Label 10750 4800 2    50   ~ 0
+SENSOR_BAT
+$Comp
+L Device:R R22
+U 1 1 6653BFFD
+P 11000 5050
+F 0 "R22" H 11070 5096 50  0000 L CNN
+F 1 "150k" H 11070 5005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10930 5050 50  0001 C CNN
+F 3 "~" H 11000 5050 50  0001 C CNN
+F 4 " C17470" H 11000 5050 50  0001 C CNN "LCSC"
+	1    11000 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 66586D13
+P 11000 4550
+F 0 "R21" H 11070 4596 50  0000 L CNN
+F 1 "680k" H 11070 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10930 4550 50  0001 C CNN
+F 3 "~" H 11000 4550 50  0001 C CNN
+F 4 " C17797" H 11000 4550 50  0001 C CNN "LCSC"
+	1    11000 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR036
+U 1 1 666FDC76
+P 11000 5300
+F 0 "#PWR036" H 11000 5050 50  0001 C CNN
+F 1 "GND" H 11005 5127 50  0000 C CNN
+F 2 "" H 11000 5300 50  0001 C CNN
+F 3 "" H 11000 5300 50  0001 C CNN
+	1    11000 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 4300 11000 4400
+Wire Wire Line
+	11000 4800 11000 4700
+Wire Wire Line
+	11000 4800 11000 4900
+Connection ~ 11000 4800
+Wire Wire Line
+	11000 5200 11000 5300
+$Comp
+L Device:C C27
+U 1 1 5FF94231
+P 11450 5050
+F 0 "C27" H 11700 5100 50  0000 R CNN
+F 1 "0.1uF" H 11750 5000 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11488 4900 50  0001 C CNN
+F 3 "~" H 11450 5050 50  0001 C CNN
+F 4 "C14663" V 11450 5050 50  0001 C CNN "LCSC"
+	1    11450 5050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	11000 4800 11450 4800
+Wire Wire Line
+	11450 4800 11450 4900
+Wire Wire Line
+	11450 5200 11000 5200
+Connection ~ 11000 5200
+$Comp
+L Device:R R29
+U 1 1 62DF58C8
+P 11000 6650
+F 0 "R29" H 11070 6696 50  0000 L CNN
+F 1 "150k" H 11070 6605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10930 6650 50  0001 C CNN
+F 3 "~" H 11000 6650 50  0001 C CNN
+F 4 " C17470" H 11000 6650 50  0001 C CNN "LCSC"
+	1    11000 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 62DF58CF
+P 11000 6150
+F 0 "R28" H 11070 6196 50  0000 L CNN
+F 1 "680k" H 11070 6105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10930 6150 50  0001 C CNN
+F 3 "~" H 11000 6150 50  0001 C CNN
+F 4 " C17797" H 11000 6150 50  0001 C CNN "LCSC"
+	1    11000 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 62DF58D5
+P 11000 6900
+F 0 "#PWR0101" H 11000 6650 50  0001 C CNN
+F 1 "GND" H 11005 6727 50  0000 C CNN
+F 2 "" H 11000 6900 50  0001 C CNN
+F 3 "" H 11000 6900 50  0001 C CNN
+	1    11000 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 6400 11000 6300
+Wire Wire Line
+	11000 6400 11000 6500
+Connection ~ 11000 6400
+Wire Wire Line
+	11000 6800 11000 6900
+$Comp
+L Device:C C28
+U 1 1 62DF58E3
+P 11450 6650
+F 0 "C28" H 11700 6700 50  0000 R CNN
+F 1 "0.1uF" H 11750 6600 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11488 6500 50  0001 C CNN
+F 3 "~" H 11450 6650 50  0001 C CNN
+F 4 "C14663" V 11450 6650 50  0001 C CNN "LCSC"
+	1    11450 6650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	11000 6400 11450 6400
+Wire Wire Line
+	11450 6400 11450 6500
+Wire Wire Line
+	11450 6800 11000 6800
+Connection ~ 11000 6800
+Text GLabel 11000 5850 1    50   Output ~ 0
+VBUS
+Wire Wire Line
+	11000 5850 11000 6000
+Text GLabel 11000 4300 1    50   Input ~ 0
+BAT+
+Text Label 10700 6400 2    50   ~ 0
+SENSOR_VBUS
+$Comp
+L Connector:TestPoint_Probe TX1
+U 1 1 631C0DE9
+P 13900 950
+F 0 "TX1" H 14053 1051 50  0000 L CNN
+F 1 "TestPoint_Probe" H 14053 960 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 14100 950 50  0001 C CNN
+F 3 "~" H 14100 950 50  0001 C CNN
+	1    13900 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe RX1
+U 1 1 631FC1A5
+P 13900 1150
+F 0 "RX1" H 14053 1251 50  0000 L CNN
+F 1 "TestPoint_Probe" H 14053 1160 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 14100 1150 50  0001 C CNN
+F 3 "~" H 14100 1150 50  0001 C CNN
+	1    13900 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe 3.3V1
+U 1 1 63237C3D
+P 13900 1350
+F 0 "3.3V1" H 14053 1451 50  0000 L CNN
+F 1 "TestPoint_Probe" H 14053 1360 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 14100 1350 50  0001 C CNN
+F 3 "~" H 14100 1350 50  0001 C CNN
+	1    13900 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe GND1
+U 1 1 63272BD8
+P 13900 1800
+F 0 "GND1" H 14053 1901 50  0000 L CNN
+F 1 "TestPoint_Probe" H 14053 1810 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 14100 1800 50  0001 C CNN
+F 3 "~" H 14100 1800 50  0001 C CNN
+	1    13900 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe VBUS1
+U 1 1 632ADD57
+P 13900 1550
+F 0 "VBUS1" H 14053 1651 50  0000 L CNN
+F 1 "TestPoint_Probe" H 14053 1560 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 14100 1550 50  0001 C CNN
+F 3 "~" H 14100 1550 50  0001 C CNN
+	1    13900 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 1150 13700 1150
+Wire Wire Line
+	13900 1350 13700 1350
+Wire Wire Line
+	13900 1550 13700 1550
+Wire Wire Line
+	13900 1800 13600 1800
+Wire Wire Line
+	13700 950  13900 950 
+Text Label 11750 950  2    50   ~ 0
++3.3V
+$Comp
+L Device:R R31
+U 1 1 6356A804
+P 12250 1200
+F 0 "R31" H 12320 1246 50  0000 L CNN
+F 1 "10k" H 12320 1155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 12180 1200 50  0001 C CNN
+F 3 "~" H 12250 1200 50  0001 C CNN
+F 4 "C17414" H 12250 1200 50  0001 C CNN "LCSC"
+	1    12250 1200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11950 1050 11950 950 
+Wire Wire Line
+	11950 950  12250 950 
+Text Label 11850 1450 2    50   ~ 0
+TCH_SDA
+Text Label 11850 1600 2    50   ~ 0
+TCH_SCL
+Wire Wire Line
+	11950 1350 11950 1450
+Wire Wire Line
+	11850 1450 11950 1450
+$Comp
+L Device:R R30
+U 1 1 638DBC02
+P 11950 1200
+F 0 "R30" H 12020 1246 50  0000 L CNN
+F 1 "10k" H 12020 1155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11880 1200 50  0001 C CNN
+F 3 "~" H 11950 1200 50  0001 C CNN
+F 4 "C17414" H 11950 1200 50  0001 C CNN "LCSC"
+	1    11950 1200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	12250 1050 12250 950 
+$Comp
+L Connector:TestPoint_Probe SDA1
+U 1 1 639CBCBA
+P 12300 1450
+F 0 "SDA1" H 12453 1551 50  0000 L CNN
+F 1 "TestPoint_Probe" H 12453 1460 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 12500 1450 50  0001 C CNN
+F 3 "~" H 12500 1450 50  0001 C CNN
+	1    12300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe SCL1
+U 1 1 63A070A5
+P 12300 1600
+F 0 "SCL1" H 12453 1701 50  0000 L CNN
+F 1 "TestPoint_Probe" H 12453 1610 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 12500 1600 50  0001 C CNN
+F 3 "~" H 12500 1600 50  0001 C CNN
+	1    12300 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 1450 11950 1450
+Connection ~ 11950 1450
+Wire Wire Line
+	11850 1600 12250 1600
+Wire Wire Line
+	12250 1350 12250 1600
+Connection ~ 12250 1600
+Wire Wire Line
+	12250 1600 12300 1600
+Wire Wire Line
+	11950 950  11750 950 
+Connection ~ 11950 950 
+$Comp
+L epd_breakout:GHT30-DIS U12
+U 1 1 62DB40E1
+P 12200 2550
+F 0 "U12" H 12200 3031 50  0000 C CNN
+F 1 "GHT30_DIS" H 12200 2940 50  0000 C CNN
+F 2 "Sensor_Humidity:Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm" H 12200 2600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2106062244_GXCAS-GXHT30_C2758005.pdf" H 12200 2600 50  0001 C CNN
+F 4 "C2758005" H 12200 2550 50  0001 C CNN "LCSC"
+	1    12200 2550
+	1    0    0    -1  
+$EndComp
+Text Label 11850 2150 2    50   ~ 0
++3.3V
+Wire Wire Line
+	11850 2150 12200 2150
+Wire Wire Line
+	12200 2150 12200 2250
+$Comp
+L power:GND #PWR0102
+U 1 1 62E05275
+P 11600 2950
+F 0 "#PWR0102" H 11600 2700 50  0001 C CNN
+F 1 "GND" H 11605 2777 50  0000 C CNN
+F 2 "" H 11600 2950 50  0001 C CNN
+F 3 "" H 11600 2950 50  0001 C CNN
+	1    11600 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12200 2900 12200 2850
+Wire Wire Line
+	11800 2450 11600 2450
+Wire Wire Line
+	12200 2900 11600 2900
+Connection ~ 11600 2900
+Wire Wire Line
+	11600 2900 11600 2950
+Wire Wire Line
+	11600 2450 11600 2650
+Wire Wire Line
+	11600 2650 11800 2650
+Connection ~ 11600 2650
+Wire Wire Line
+	11600 2650 11600 2900
+Text Label 12850 2450 0    50   ~ 0
+TCH_SDA
+Text Label 12850 2550 0    50   ~ 0
+TCH_SCL
+Wire Wire Line
+	12600 2450 12850 2450
+Wire Wire Line
+	12850 2550 12600 2550
+Wire Wire Line
+	10750 4800 11000 4800
+Wire Wire Line
+	10700 6400 11000 6400
+Wire Wire Line
+	8000 1600 7800 1600
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 630746F8
+P 15300 1900
+F 0 "H5" H 15400 1946 50  0000 L CNN
+F 1 "MountingHole" H 15400 1855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 15300 1900 50  0001 C CNN
+F 3 "~" H 15300 1900 50  0001 C CNN
+	1    15300 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 63075C9A
+P 15300 2150
+F 0 "H6" H 15400 2196 50  0000 L CNN
+F 1 "MountingHole" H 15400 2105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 15300 2150 50  0001 C CNN
+F 3 "~" H 15300 2150 50  0001 C CNN
+	1    15300 2150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
